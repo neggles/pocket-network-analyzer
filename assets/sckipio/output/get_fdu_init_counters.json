@@ -1,0 +1,15 @@
+{
+    "DacScaler": 0,
+    "dsMargin": 0,
+    "sseScale": 0,
+    "lengthInBytes": 52,
+    "winSize": 0,
+    "revision": 10,
+    "numTonesOfVecPerFduRnd": 0,
+    "ActualAnalogGainTx": 0,
+    "numTonesOfVecPerFdu": 0,
+    "vectoringEnabled": 0,
+    "usMargin": 0,
+    "numTonesOfVecAux": 0,
+    "numTonesOfVecAuxRnd": 0
+}

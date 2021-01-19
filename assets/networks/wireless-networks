@@ -1,0 +1,185 @@
+#!/usr/bin/perl
+
+#================================
+# Author: Brandon Bailey
+# Uses:
+#  This program is written in perl and is useful for 
+#  parsing the output of scanning wireless networks.
+#================================
+
+use strict;
+use warnings;
+
+my $iwlistOut = `sudo iwlist wlan0 scan 2> /dev/null`; 
+
+my @wirelessNetworksArray = split("\n", $iwlistOut);
+
+my @cellArr = ();
+
+my( $name , $quality, $encryption, $frequency) = "";
+
+my( $encryptionType , $groupCipher, $authenticationSuite, $pairwiseCipher, $macAddress ) = undef;
+
+
+my $currNum = 0;
+
+
+if(@wirelessNetworksArray)
+{
+	&writeOpening();
+}
+
+foreach my $lineOfWirelessArray (@wirelessNetworksArray)
+{
+    if ($lineOfWirelessArray =~ "Cell [0-9][0-9]")
+    {
+		if ($currNum > 0)
+		{			
+		   #&printFin($name, $quality, $encryption);	
+		   &writeNetworks( $name, $quality, $encryption , $encryptionType , $groupCipher, $pairwiseCipher, $authenticationSuite , $frequency, $macAddress);	
+           &clearVariables();	
+		}
+
+		$currNum++;
+    }
+
+    $cellArr[$currNum] = "$lineOfWirelessArray" . "\n";
+
+    if($lineOfWirelessArray =~ "Address") {
+        &handleMacAddress($lineOfWirelessArray);
+    }
+
+    if ($lineOfWirelessArray =~ "ESSID")
+    {
+		&handleName($lineOfWirelessArray);
+    }
+    elsif($lineOfWirelessArray =~ "Encryption key")
+    {
+		&handleKey($lineOfWirelessArray);
+    }
+    elsif($lineOfWirelessArray =~ "Quality=[0-9]+/[0-9]+")
+    {
+		&handleQuality($lineOfWirelessArray);
+    }
+    elsif($lineOfWirelessArray =~ "IE:" && $lineOfWirelessArray !~"IE: Unknown:")
+    {
+        &handleEncryptionType($lineOfWirelessArray);
+    }
+    elsif($lineOfWirelessArray =~ "Group Cipher :")
+    {
+        &handleGroupCipher($lineOfWirelessArray);
+    }
+    elsif($lineOfWirelessArray =~ "Pairwise Ciphers")
+    {
+        &handlePairwiseCipher($lineOfWirelessArray);
+    }
+    elsif($lineOfWirelessArray =~ "Authentication Suites")
+    {
+        &handleAuthenticationSuites($lineOfWirelessArray);
+    }
+    elsif($lineOfWirelessArray =~ "Frequency:")
+    {
+        &handleFrequency($lineOfWirelessArray);
+    }    
+}
+
+
+if ($currNum > 0)
+{
+    &writeClosing( $name, $quality, $encryption , $encryptionType , $groupCipher, $pairwiseCipher, $authenticationSuite, $frequency, $macAddress );
+}
+else
+{
+    print("NONE");
+}
+
+if (scalar @ARGV == 1)
+{
+  	my $myNum = ($ARGV[0] =~ "[0-9]+");    
+    print $cellArr[$ARGV[0]] if($myNum && ($ARGV[0]>0 && $ARGV[0] <= $currNum));    
+}
+
+
+sub handleQuality ()
+{
+    my $qual = shift;
+    my @qualArr = split(" ", $qual);
+    $quality = (split("=", $qualArr[0]))[1];
+}
+
+sub handleMacAddress()
+{
+    my @macAddressArray = @_;
+    $macAddress = (split(": ", $macAddressArray[0]))[1];
+}
+
+
+sub handleEncryptionType()
+{
+    my @encryptionTypeArray = @_;
+    $encryptionType = (split("IE: ", $encryptionTypeArray[0]))[1];
+}
+
+sub handleGroupCipher()
+{
+    my @groupCipherArray = @_;
+    $groupCipher = (split(": ", $groupCipherArray[0]))[1];
+}
+
+sub handlePairwiseCipher()
+{
+    my @pairwiseCipherArray = @_;
+    $pairwiseCipher = (split(": ", $pairwiseCipherArray[0]))[1];
+}
+
+sub handleAuthenticationSuites()
+{
+    my @authenticationSuitesArray = @_;
+    $authenticationSuite = (split(": ", $authenticationSuitesArray[0]))[1];
+}
+
+sub handleKey ()
+{
+	my @encryptionKey = shift;
+    $encryption = (split(":", $encryptionKey[0]))[1];
+}
+
+sub handleName ()
+{
+	my @ssid = shift;
+    $name = (split(":", $ssid[0]))[1];
+}
+
+sub handleFrequency ()
+{
+    my $freq = shift;
+    my @freqArr = split(" ", $freq);
+    $frequency = (split(":", $freqArr[0]))[1];
+}
+
+sub writeOpening()
+{
+	print "{\n";
+	print "\t\"networks\":[\n";
+}
+
+sub writeNetworks()
+{
+	my @networkResult = @_;
+    printf("\t\t{\"ssid\":%s,\"quality\":\"%s\",\"encryption\":\"%s\",\"encryptionType\":\"%s\",\"groupCipher\":\"%s\",\"pairwiseCipher\":\"%s\",\"authenticationSuite\":\"%s\",\"frequency\":\"%s\",\"mac\":\"%s\"},\n", $networkResult[0],
+	   $networkResult[1], $networkResult[2], $networkResult[3] || "", $networkResult[4] || "", $networkResult[5] || "", $networkResult[6] || "", $networkResult[7] || "", $networkResult[8] || "");
+}
+
+sub writeClosing()
+{
+	my @networkResult = @_;
+
+    printf("\t\t{\"ssid\":%s,\"quality\":\"%s\",\"encryption\":\"%s\",\"encryptionType\":\"%s\",\"groupCipher\":\"%s\",\"pairwiseCipher\":\"%s\",\"authenticationSuite\":\"%s\",\"frequency\":\"%s\",\"mac\":\"%s\"}\n\t]\n}\n", $networkResult[0],
+       $networkResult[1], $networkResult[2], $networkResult[3] || "", $networkResult[4] || "", $networkResult[5] || "", $networkResult[6] || "", $networkResult[7] || "", $networkResult[8] || "");
+}
+
+sub clearVariables()
+{
+   ( $name , $quality, $encryption, $frequency ) = ""; 
+   ( $encryptionType , $groupCipher, $authenticationSuite, $pairwiseCipher, $macAddress ) = undef;
+}

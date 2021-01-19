@@ -1,0 +1,12 @@
+{
+    "TxRateInKbps": 0.0,
+    "DataRate": 0.0,
+    "TxPhyRate": 0.0,
+    "ETR": 0.0,
+    "EFTR": 0.0,
+    "TxEtrAvg": 0.0,
+    "TxETR": 0.0,
+    "RxPhyRate": 0.0,
+    "RxETR": 0.0,
+    "RxEtrAvg": 0.0
+}

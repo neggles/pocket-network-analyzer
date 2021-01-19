@@ -1,0 +1,173 @@
+{
+    "vectoringProfile":
+    {
+        "FEXT_CANCEL_ENABLEus": "F",
+        "FEXT_CANCEL_ENABLEds": "F"
+    },
+    "upboProfile":
+    {
+        "UPBOPSDB": 0,
+        "UPBOKLREF": 91,
+        "UPBOPSDA": 0,
+        "UPBOKL": 56,
+        "UPBOKLF": "F"
+    },
+    "lineSpectrumProfile":
+    {
+        "PSDMASKds[8].subCarrierIndex": 25958,
+        "PSDMASKds[4].PSDlevel": 0,
+        "PSDMASKus[2].PSDlevel": 0,
+        "PSDMASKds[3].subCarrierIndex": 4,
+        "PSDMASKds[2].PSDlevel": 3,
+        "PSDMASKds[0].PSDlevel": 4,
+        "PSDMASKus[3].PSDlevel": 0,
+        "PSDMASKds[8].PSDlevel": 49,
+        "PSDMASKus[4].subCarrierIndex": 57527,
+        "CARMASKus[0].stopScIdx": 10,
+        "PSDMASKus[3].subCarrierIndex": 1,
+        "PSDMASKds[5].PSDlevel": 255,
+        "PSDMASKds[0].subCarrierIndex": 55612,
+        "CARMASKus[4].stopScIdx": 1024,
+        "MAXATPus": 0,
+        "PSDMASKds[1].subCarrierIndex": 65534,
+        "PSDMASKds[7].subCarrierIndex": 26415,
+        "PSDMASKds[6].subCarrierIndex": 25647,
+        "CARMASKus[2].startScIdx": 20355,
+        "PSDMASKds[7].PSDlevel": 102,
+        "PSDMASKus[2].subCarrierIndex": 1,
+        "CARMASKus[3].startScIdx": 44280,
+        "PSDMASKus[4].PSDlevel": 218,
+        "PSDMASKds[1].PSDlevel": 255,
+        "PSDMASKus[1].subCarrierIndex": 127,
+        "CARMASKus[1].stopScIdx": 46815,
+        "PSDMASKds[6].PSDlevel": 101,
+        "PSDMASKds[4].subCarrierIndex": 1,
+        "CARMASKus[2].stopScIdx": 46803,
+        "PSDMASKus[0].subCarrierIndex": 1,
+        "PSDMASKus[1].PSDlevel": 0,
+        "CARMASKus[3].stopScIdx": 46815,
+        "CARMASKus[1].startScIdx": 45056,
+        "PSDMASKds[3].PSDlevel": 0,
+        "PSDMASKus[0].PSDlevel": 0,
+        "PSDMASKds[2].subCarrierIndex": 21921,
+        "CARMASKus[4].startScIdx": 0,
+        "CARMASKus[0].startScIdx": 44176,
+        "MAXATPds": 0,
+        "PSDMASKds[5].subCarrierIndex": 65535
+    },
+    "dtaProfile":
+    {
+        "cDTA_MAXMds": 0,
+        "DTA_REPORTING_WIN": 0,
+        "MINMds": 0,
+        "DTA_MODE": 0,
+        "cDTA_MINMds": 0,
+        "MAXMds": 0
+    },
+    "sraProfile":
+    {
+        "SRA_ENABLEds": "T",
+        "SRA_ENABLEus": "T"
+    },
+    "tddProfile":
+    {
+        "MF": 36,
+        "Mds": 0,
+        "CE": 0
+    },
+    "noiseMarginProfile":
+    {
+        "MAXBL_RMCus": 131,
+        "MAXBL_RMCds": 240,
+        "MAXSNRMus": 0,
+        "SRA_DSNRMds": 0,
+        "TARSNRMds": 0,
+        "MINSNRMds": 119,
+        "SRA_UTIMEds": 45608,
+        "MINSNRM_RMCds": -16643,
+        "SRA_USNRMus": 0,
+        "SRA_UTIMEus": 46815,
+        "TARSNRMus": 110,
+        "SRA_DTIMEus": 46815,
+        "SRA_DSNRMus": 0,
+        "SRA_USNRMds": 124,
+        "MINSNRMus": 0,
+        "TARSNRM_RMCds": 1,
+        "SRA_DTIMEds": 45056,
+        "TARSNRM_RMCus": 0,
+        "MINSNRM_RMCus": -19232
+    },
+    "fastRateAdaptationProfile":
+    {
+        "FRA_VENDISCus": "F",
+        "FRA_RTXUCus": 17,
+        "FRA_NTONESds": 17,
+        "FRA_TIMEus": 182,
+        "FRA_TIMEds": 223,
+        "FRA_VENDISCds": "F",
+        "FRA_RTXUCds": 0,
+        "FRA_NTONESus": 0
+    },
+    "dataRateProfile":
+    {
+        "MINETRds": 0,
+        "MAXNDRds": 3067465859,
+        "MAXGDRds": 648576,
+        "MAXNDRus": 0,
+        "MINETRus": 4222451712,
+        "MINGDRds": 648576,
+        "BLUPPERLIMITus": 229,
+        "BLUPPERLIMITds": 144,
+        "MAXGDRus": 648576
+    },
+    "retransmissionProfile":
+    {
+        "INPMIN_REINds": 9,
+        "INPMIN_REINus": 0,
+        "IAT_REINds": 16,
+        "INPMIN_SHINEus": 58752,
+        "INPMIN_SHINEds": 0,
+        "SHINERATIOus": 132,
+        "IAT_REINus": 648576,
+        "DELAYMAXus": 271832,
+        "DELAYMAXds": -1090681784,
+        "SHINERATIOds": 100,
+        "RNRATIOds": 16,
+        "RNRATIOus": 0
+    },
+    "dataPathConfigProfile":
+    {},
+    "rfiProfile":
+    {
+        "RFIBANDS[4].startScIdx": 53248,
+        "RFIBANDS[0].startScIdx": 33788,
+        "RFIBANDS[2].startScIdx": 1,
+        "RFIBANDS[4].stopScIdx": 46832,
+        "RFIBANDS[1].stopScIdx": 48893,
+        "RFIBANDS[2].stopScIdx": 0,
+        "RFIBANDS[3].startScIdx": 127,
+        "RFIBANDS[3].stopScIdx": 0,
+        "IARBANDS": "0X28",
+        "RFIBANDS[0].stopScIdx": 48893,
+        "RFIBANDS[1].startScIdx": 33672
+    },
+    "aceConfigProfile":
+    {
+        "ACEP2N2": 648576,
+        "ACEMODE": 648676,
+        "ALLOWACEON": 648676
+    },
+    "reinitPolicyProfile":
+    {
+        "LOS_PERSISTENCYus": 229,
+        "LOS_PERSISTENCYds": 128,
+        "LOW_ETR_THRESHOLDds": 72,
+        "LOW_ETR_THRESHOLDus": 132,
+        "LOR_PERSISTENCYus": 0,
+        "REINIT_TIME_THRESHOLDds": 0,
+        "REINIT_TIME_THRESHOLDus": 0,
+        "LOR_PERSISTENCYds": 0,
+        "LOM_PERSISTENCYus": 0,
+        "LOM_PERSISTENCYds": 9
+    }
+}

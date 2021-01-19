@@ -1,0 +1,1513 @@
+        [
+        {
+            "ssid": "Home-Bailey5G",
+            "mac": "08:62:66:90:b4:84",
+            "manufacturer": "ASUSTek COMPUTER INC.",
+            "frequency": 5785,
+            "capabilities": [
+                "ESS",
+                "Privacy",
+                "SpectrumMgmt",
+                "ShortSlotTime",
+                "(0x0511)"
+            ],
+            "signal_strength": "-29.00 dBm",
+            "supported_rates": [
+                "6.0*",
+                9,
+                "12.0*",
+                18,
+                24,
+                36,
+                48,
+                54
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 157
+            },
+            "traffic_indic_map": [],
+            "ht_capabilities":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Capabilities"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        2159,
+                        "RX LDPC",
+                        "HT20\/HT40",
+                        "SM Power Save disabled",
+                        "RX HT20 SGI",
+                        "RX HT40 SGI",
+                        "No RX STBC",
+                        "Max AMSDU length: 7935 bytes",
+                        "No DSSS\/CCK HT40"
+                    ]
+                },
+                "max_rx_ampdu_length": "65535 bytes (exponent: 0x003)",
+                "min_rx_ampdu_time_spacing": "4 usec (0x05)",
+                "ht_tx_rx_mcs_rate_indexes_supported": "0-31, -76"
+            },
+            "ht_operation":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Operation"
+                },
+                "primary_channel": 157,
+                "secondary_channel_offset": "above",
+                "station_channel_width": "any",
+                "rifs": 0,
+                "ht_protection": "20 MHz",
+                "non_gf_present": 1,
+                "obss_non_gf_present": 0,
+                "dual_beacon": 0,
+                "dual_cts_protection": 0,
+                "stbc_beacon": 0,
+                "l_sig_txop_prot": 0,
+                "pco_active": 0,
+                "pco_phase": 0
+            },
+            "vht_capabilities":
+            {
+                "@attributes":
+                {
+                    "title": "Very High Throughput Capabilities"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "(0x3fc37832)",
+                        "RX LDPC",
+                        "short GI (80 MHz)",
+                        "SU Beamformer",
+                        "SU Beamformee",
+                        "+HTC-VHT",
+                        "RX antenna pattern consistency",
+                        "TX antenna pattern consistency"
+                    ],
+                    "max_mpdu_length": 11454,
+                    "supported_channel_width": "neither 160 nor 80+80",
+                    "vht_rx_mcs_set":
+                    {
+                        "streams": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8
+                        ],
+                        "rx_mcs": [
+                            "MCS 0-9",
+                            "MCS 0-9",
+                            "MCS 0-9",
+                            "MCS 0-9",
+                            "not supported",
+                            "not supported",
+                            "not supported",
+                            "not supported"
+                        ],
+                        "vht_rx_highest_supported": "0 Mbps",
+                    },                    
+                    "vht_tx_mcs_set":
+                    {
+                        "streams": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5,
+                            6,
+                            7,
+                            8
+                        ],
+                        "tx_mcs": [
+                            "MCS 0-9",
+                            "MCS 0-9",
+                            "MCS 0-9",
+                            "MCS 0-9",
+                            "not supported",
+                            "not supported",
+                            "not supported",
+                            "not supported"
+                        ],
+                        "vht_tx_highest_supported": "0 Mbps"
+                    }                    
+                }
+            },
+            "vht_operation":
+            {
+                "@attributes":
+                {
+                    "title": "Very High Throughput Operation"
+                },
+                "channel_width": "1(80 MHz)",
+                "center_freq_segment_1": 155,
+                "center_freq_segment_2": 0,
+                "vht_basic_mcs_set": 65532
+            },
+            "wireless_multimedia":
+            {
+                "description": "Supports multimedia applications with Quality of Service (QoS) over Wireless media.\n\t The QoS priority levels are {voice, video, best effort, background}.",
+                "parameter": "version 1",
+                "wmm_feature": [
+                {
+                    "name": "u-APSD"
+                },
+                {
+                    "name": "Best Effort",
+                    "contention_window": "15-1023",
+                    "aifsn": 3
+                },
+                {
+                    "name": "Background",
+                    "contention_window": "15-1023",
+                    "aifsn": 7
+                },
+                {
+                    "name": "Video",
+                    "contention_window": "7-15",
+                    "aifsn": 2,
+                    "transmit_opportunity": "3008 usec"
+                },
+                {
+                    "name": "Voice",
+                    "contention_window": "3-7",
+                    "aifsn": 2,
+                    "transmit_opportunity": "1504 usec"
+                }]
+            },
+            "robust_secure_network":
+            {
+                "@attributes":
+                {
+                    "title": "Robust Secure Network"
+                },
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "1-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x0000)"
+                    ]
+                }
+            },
+            "wps":
+            {
+                "version": 1,
+                "wps_state": "2 (Configured)",
+                "response_type": "3 (AP)",
+                "uuid": "655aea78-2924-5ea6-96e1-79feb07ecb4d",
+                "manufacturer": "ASUS",
+                "model": "Router",
+                "model_number": "QV840.432",
+                "serial_number": "08626690B484",
+                "primary_device_type": "6-0050f204-1",
+                "device_name": "Router",
+                "config_methods": " Display",
+                "unknown_tlv": "(0x1049, 6 bytes) 00 37 2a 00 01 20"
+            },
+            "wpa": [],
+            "extended_supported_rates": [],
+            "extended_rate_physical_layer": "",
+            "extended_capabilities":
+            {
+                "capability": [
+                    "HT Information Exchange Supported",
+                    "SSID List",
+                    6
+                ]
+            },
+            "bss_load": [],
+            "available_channels":
+            {
+                "channels": "[36 - 36]",
+                "power": "30 dBm"
+            }
+        },
+        {
+            "ssid": "Home-Bailey",
+            "mac": "08:62:66:90:b4:80",
+            "manufacturer": "ASUSTek COMPUTER INC.",
+            "frequency": 2457,
+            "capabilities": [
+                "ESS",
+                "Privacy",
+                "ShortSlotTime",
+                "RadioMeasure",
+                "(0x1411)"
+            ],
+            "signal_strength": "-28.00 dBm",
+            "supported_rates": [
+                "1.0*",
+                "2.0*",
+                "5.5*",
+                "11.0*",
+                18,
+                24,
+                36,
+                54
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 10
+            },
+            "traffic_indic_map": [],
+            "ht_capabilities":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Capabilities"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        6573,
+                        "RX LDPC",
+                        "HT20",
+                        "SM Power Save disabled",
+                        "RX HT20 SGI",
+                        "TX STBC",
+                        "RX STBC 1-stream",
+                        "Max AMSDU length: 7935 bytes",
+                        "DSSS\/CCK HT40"
+                    ]
+                },
+                "max_rx_ampdu_length": "65535 bytes (exponent: 0x003)",
+                "min_rx_ampdu_time_spacing": "4 usec (0x05)",
+                "ht_tx_rx_mcs_rate_indexes_supported":
+                {
+                    "rx_indexes_supported": "0-23",
+                    "tx_indexes_supported": "HT TX MCS rate indexes are undefined"
+                }
+            },
+            "ht_operation":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Operation"
+                },
+                "primary_channel": 10,
+                "secondary_channel_offset": "no secondary",
+                "station_channel_width": "20 MHz",
+                "rifs": 1,
+                "ht_protection": "no",
+                "non_gf_present": 1,
+                "obss_non_gf_present": 0,
+                "dual_beacon": 0,
+                "dual_cts_protection": 0,
+                "stbc_beacon": 0,
+                "l_sig_txop_prot": 0,
+                "pco_active": 0,
+                "pco_phase": 0
+            },
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia":
+            {
+                "description": "Supports multimedia applications with Quality of Service (QoS) over Wireless media.\n\t The QoS priority levels are {voice, video, best effort, background}.",
+                "parameter": "version 1",
+                "wmm_feature": [
+                {
+                    "name": "u-APSD"
+                },
+                {
+                    "name": "Best Effort",
+                    "contention_window": "15-1023",
+                    "aifsn": 3
+                },
+                {
+                    "name": "Background",
+                    "contention_window": "15-1023",
+                    "aifsn": 7
+                },
+                {
+                    "name": "Video",
+                    "contention_window": "7-15",
+                    "aifsn": 2,
+                    "transmit_opportunity": "3008 usec"
+                },
+                {
+                    "name": "Voice",
+                    "contention_window": "3-7",
+                    "aifsn": 2,
+                    "transmit_opportunity": "1504 usec"
+                }]
+            },
+            "robust_secure_network":
+            {
+                "@attributes":
+                {
+                    "title": "Robust Secure Network"
+                },
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "16-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x000c)"
+                    ]
+                }
+            },
+            "wps":
+            {
+                "version": 1,
+                "wps_state": "2 (Configured)",
+                "response_type": "3 (AP)",
+                "uuid": "89b33950-db92-63c8-f87e-92ea7a7a9b28",
+                "manufacturer": "ASUSTeK Computer Inc.",
+                "model": "Wi-Fi Protected Setup Router",
+                "model_number": "RT-AC87R",
+                "serial_number": "08:62:66:90:b4:80",
+                "primary_device_type": "6-0050f204-1",
+                "device_name": "RT-AC87R",
+                "config_methods": " Display",
+                "rf_bands": 1,
+                "unknown_tlv": "(0x1049, 6 bytes) 00 37 2a 00 01 20"
+            },
+            "wpa": [],
+            "extended_supported_rates":
+            {
+                "rate": [
+                    6,
+                    9,
+                    12,
+                    48
+                ]
+            },
+            "extended_rate_physical_layer": "Barker_Preamble_Mode",
+            "extended_capabilities":
+            {
+                "capability": [
+                    "HT Information Exchange Supported",
+                    "Extended Channel Switching",
+                    6
+                ]
+            },
+            "bss_load": [],
+            "available_channels": []
+        },
+        {
+            "ssid": "POCKET-FI",
+            "mac": "c4:e9:84:17:97:32",
+            "manufacturer": "TP-LINK TECHNOLOGIES CO.,LTD.",
+            "frequency": 2412,
+            "capabilities": [
+                "ESS",
+                "ShortSlotTime",
+                "(0x0401)"
+            ],
+            "signal_strength": "-7.00 dBm",
+            "supported_rates": [
+                "1.0*",
+                "2.0*",
+                "5.5*",
+                "11.0*",
+                6,
+                9,
+                12,
+                18
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 1
+            },
+            "traffic_indic_map":
+            {
+                "@attributes":
+                {
+                    "title": "Traffic Indication Map"
+                },
+                "dtim_count": 0,
+                "dtim_period": 1,
+                "bitmap_control": 0,
+                "bitmap": 0
+            },
+            "ht_capabilities": [],
+            "ht_operation": [],
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia": [],
+            "robust_secure_network": [],
+            "wps": [],
+            "wpa": [],
+            "extended_supported_rates":
+            {
+                "rate": [
+                    24,
+                    36,
+                    48,
+                    54
+                ]
+            },
+            "extended_rate_physical_layer": "Barker_Preamble_Mode",
+            "extended_capabilities": [],
+            "bss_load": [],
+            "available_channels": []
+        },
+        {
+            "ssid": "ATT-NVG589",
+            "mac": "e8:33:81:dc:d0:30",
+            "manufacturer": "ARRIS Group,Inc.",
+            "frequency": 2412,
+            "capabilities": [
+                "ESS",
+                "Privacy",
+                "ShortSlotTime",
+                "(0x0411)"
+            ],
+            "signal_strength": "-44.00 dBm",
+            "supported_rates": [
+                "1.0*",
+                "2.0*",
+                "5.5*",
+                "11.0*",
+                18,
+                24,
+                36,
+                54
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 1
+            },
+            "traffic_indic_map": [],
+            "ht_capabilities":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Capabilities"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        6268,
+                        "HT20",
+                        "SM Power Save disabled",
+                        "RX Greenfield",
+                        "RX HT20 SGI",
+                        "RX HT40 SGI",
+                        "No RX STBC",
+                        "Max AMSDU length: 7935 bytes",
+                        "DSSS\/CCK HT40"
+                    ]
+                },
+                "max_rx_ampdu_length": "65535 bytes (exponent: 0x003)",
+                "min_rx_ampdu_time_spacing": "8 usec (0x06)",
+                "ht_tx_rx_mcs_rate_indexes_supported":
+                {
+                    "rx_indexes_supported": "0-15",
+                    "tx_indexes_supported": "HT TX MCS rate indexes are undefined"
+                }
+            },
+            "ht_operation":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Operation"
+                },
+                "primary_channel": 1,
+                "secondary_channel_offset": "no secondary",
+                "station_channel_width": "20 MHz",
+                "rifs": 1,
+                "ht_protection": "nonmember",
+                "non_gf_present": 0,
+                "obss_non_gf_present": 1,
+                "dual_beacon": 0,
+                "dual_cts_protection": 0,
+                "stbc_beacon": 0,
+                "l_sig_txop_prot": 0,
+                "pco_active": 0,
+                "pco_phase": 0
+            },
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia":
+            {
+                "description": "Supports multimedia applications with Quality of Service (QoS) over Wireless media.\n\t The QoS priority levels are {voice, video, best effort, background}.",
+                "parameter": "version 1",
+                "wmm_feature": [
+                {
+                    "name": "u-APSD"
+                },
+                {
+                    "name": "Best Effort",
+                    "contention_window": "15-1023",
+                    "aifsn": 3
+                },
+                {
+                    "name": "Background",
+                    "contention_window": "15-1023",
+                    "aifsn": 7
+                },
+                {
+                    "name": "Video",
+                    "contention_window": "7-15",
+                    "aifsn": 2,
+                    "transmit_opportunity": "3008 usec"
+                },
+                {
+                    "name": "Voice",
+                    "contention_window": "3-7",
+                    "aifsn": 2,
+                    "transmit_opportunity": "1504 usec"
+                }]
+            },
+            "robust_secure_network":
+            {
+                "@attributes":
+                {
+                    "title": "Robust Secure Network"
+                },
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "TKIP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": [
+                        "CCMP",
+                        "TKIP"
+                    ]
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "16-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x000c)"
+                    ]
+                }
+            },
+            "wps": [],
+            "wpa":
+            {
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "TKIP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": [
+                        "CCMP",
+                        "TKIP"
+                    ]
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "16-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x000c)"
+                    ]
+                }
+            },
+            "extended_supported_rates":
+            {
+                "rate": [
+                    6,
+                    9,
+                    12,
+                    48
+                ]
+            },
+            "extended_rate_physical_layer": " ",
+            "extended_capabilities": [],
+            "bss_load": [],
+            "available_channels": []
+        },
+        {
+            "ssid": "HP-Print-1B-Officejet 4630",
+            "mac": "28:80:23:f4:90:1b",
+            "manufacturer": "Hewlett Packard",
+            "frequency": 2437,
+            "capabilities": [
+                "ESS",
+                "ShortPreamble",
+                "ShortSlotTime",
+                "(0x0421)"
+            ],
+            "signal_strength": "-86.00 dBm",
+            "supported_rates": [
+                1,
+                2,
+                5.5,
+                6,
+                9,
+                11,
+                12,
+                18
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 6
+            },
+            "traffic_indic_map": [],
+            "ht_capabilities": [],
+            "ht_operation": [],
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia":
+            {
+                "description": "Supports multimedia applications with Quality of Service (QoS) over Wireless media.\n\t The QoS priority levels are {voice, video, best effort, background}.",
+                "parameter": "version 1",
+                "wmm_feature": [
+                {
+                    "name": "u-APSD"
+                },
+                {
+                    "name": "Best Effort",
+                    "contention_window": "15-1023",
+                    "aifsn": 3
+                },
+                {
+                    "name": "Background",
+                    "contention_window": "15-1023",
+                    "aifsn": 7
+                },
+                {
+                    "name": "Video",
+                    "contention_window": "7-15",
+                    "aifsn": 2,
+                    "transmit_opportunity": "3008 usec"
+                },
+                {
+                    "name": "Voice",
+                    "contention_window": "3-7",
+                    "aifsn": 2,
+                    "transmit_opportunity": "1504 usec"
+                }]
+            },
+            "robust_secure_network": [],
+            "wps": [],
+            "wpa": [],
+            "extended_supported_rates":
+            {
+                "rate": [
+                    24,
+                    36,
+                    48,
+                    54
+                ]
+            },
+            "extended_rate_physical_layer": "Use_Protection",
+            "extended_capabilities": [],
+            "bss_load": [],
+            "available_channels": []
+        },
+        {
+            "ssid": "2WIRE244",
+            "mac": "00:18:3f:f3:e2:69",
+            "manufacturer": "2Wire Inc",
+            "frequency": 2432,
+            "capabilities": [
+                "ESS",
+                "Privacy",
+                "ShortPreamble",
+                "ShortSlotTime",
+                "(0x0431)"
+            ],
+            "signal_strength": "-58.00 dBm",
+            "supported_rates": [
+                "1.0*",
+                "2.0*",
+                "5.5*",
+                6,
+                9,
+                "11.0*",
+                12,
+                18
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 5
+            },
+            "traffic_indic_map": [],
+            "ht_capabilities": [],
+            "ht_operation": [],
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia": [],
+            "robust_secure_network": [],
+            "wps": [],
+            "wpa": [],
+            "extended_supported_rates":
+            {
+                "rate": [
+                    24,
+                    36,
+                    48,
+                    54
+                ]
+            },
+            "extended_rate_physical_layer": " ",
+            "extended_capabilities": [],
+            "bss_load": [],
+            "available_channels":
+            {
+                "channels": "[1 - 11]",
+                "power": "27 dBm"
+            }
+        },
+        {
+            "ssid": "xfinitywifi",
+            "mac": "20:25:64:b4:82:8a",
+            "manufacturer": "PEGATRON CORPORATION",
+            "frequency": 2437,
+            "capabilities": [
+                "ESS",
+                "ShortPreamble",
+                "ShortSlotTime",
+                "(0x0421)"
+            ],
+            "signal_strength": "-86.00 dBm",
+            "supported_rates": [
+                "1.0*",
+                "2.0*",
+                "5.5*",
+                "11.0*",
+                "6.0*",
+                9,
+                "12.0*",
+                18
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 6
+            },
+            "traffic_indic_map":
+            {
+                "@attributes":
+                {
+                    "title": "Traffic Indication Map"
+                },
+                "dtim_count": 0,
+                "dtim_period": 1,
+                "bitmap_control": 0,
+                "bitmap": 0
+            },
+            "ht_capabilities":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Capabilities"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        429,
+                        "RX LDPC",
+                        "HT20",
+                        "SM Power Save disabled",
+                        "RX HT20 SGI",
+                        "TX STBC",
+                        "RX STBC 1-stream",
+                        "Max AMSDU length: 3839 bytes",
+                        "No DSSS\/CCK HT40"
+                    ]
+                },
+                "max_rx_ampdu_length": "65535 bytes (exponent: 0x003)",
+                "min_rx_ampdu_time_spacing": "8 usec (0x06)",
+                "ht_tx_rx_mcs_rate_indexes_supported": "0-23"
+            },
+            "ht_operation":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Operation"
+                },
+                "primary_channel": 6,
+                "secondary_channel_offset": "no secondary",
+                "station_channel_width": "20 MHz",
+                "rifs": 0,
+                "ht_protection": "nonmember",
+                "non_gf_present": 1,
+                "obss_non_gf_present": 0,
+                "dual_beacon": 0,
+                "dual_cts_protection": 0,
+                "stbc_beacon": 0,
+                "l_sig_txop_prot": 0,
+                "pco_active": 0,
+                "pco_phase": 0
+            },
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia":
+            {
+                "description": "Supports multimedia applications with Quality of Service (QoS) over Wireless media.\n\t The QoS priority levels are {voice, video, best effort, background}.",
+                "parameter": "version 1",
+                "wmm_feature": [
+                {
+                    "name": "u-APSD"
+                },
+                {
+                    "name": "Best Effort",
+                    "contention_window": "15-1023",
+                    "aifsn": 3
+                },
+                {
+                    "name": "Background",
+                    "contention_window": "15-1023",
+                    "aifsn": 7
+                },
+                {
+                    "name": "Video",
+                    "contention_window": "7-15",
+                    "aifsn": 2,
+                    "transmit_opportunity": "3008 usec"
+                },
+                {
+                    "name": "Voice",
+                    "contention_window": "3-7",
+                    "aifsn": 2,
+                    "transmit_opportunity": "1504 usec"
+                }]
+            },
+            "robust_secure_network": [],
+            "wps": [],
+            "wpa": [],
+            "extended_supported_rates":
+            {
+                "rate": [
+                    "24.0*",
+                    36,
+                    48,
+                    54
+                ]
+            },
+            "extended_rate_physical_layer": " ",
+            "extended_capabilities":
+            {
+                "capability": [
+                    "HT Information Exchange Supported",
+                    6
+                ]
+            },
+            "bss_load": [],
+            "available_channels":
+            {
+                "channels": "[1 - 11]",
+                "power": "30 dBm"
+            }
+        },
+        {
+            "ssid": "Lab-Bailey",
+            "mac": "e0:3f:49:ec:8e:b8",
+            "manufacturer": "ASUSTek COMPUTER INC.",
+            "frequency": 2437,
+            "capabilities": [
+                "ESS",
+                "Privacy",
+                "ShortSlotTime",
+                "(0x0411)"
+            ],
+            "signal_strength": "-67.00 dBm",
+            "supported_rates": [
+                "1.0*",
+                "2.0*",
+                "5.5*",
+                "11.0*",
+                18,
+                24,
+                36,
+                54
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 6
+            },
+            "traffic_indic_map": [],
+            "ht_capabilities":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Capabilities"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        6383,
+                        "RX LDPC",
+                        "HT20\/HT40",
+                        "SM Power Save disabled",
+                        "RX HT20 SGI",
+                        "RX HT40 SGI",
+                        "TX STBC",
+                        "No RX STBC",
+                        "Max AMSDU length: 7935 bytes",
+                        "DSSS\/CCK HT40"
+                    ]
+                },
+                "max_rx_ampdu_length": "65535 bytes (exponent: 0x003)",
+                "min_rx_ampdu_time_spacing": "8 usec (0x06)",
+                "ht_tx_rx_mcs_rate_indexes_supported":
+                {
+                    "rx_indexes_supported": "0-23, ",
+                    "tx_indexes_supported": "HT TX MCS rate indexes are undefined"
+                }
+            },
+            "ht_operation":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Operation"
+                },
+                "primary_channel": 6,
+                "secondary_channel_offset": "below",
+                "station_channel_width": "any",
+                "rifs": 1,
+                "ht_protection": "no",
+                "non_gf_present": 0,
+                "obss_non_gf_present": 0,
+                "dual_beacon": 0,
+                "dual_cts_protection": 0,
+                "stbc_beacon": 0,
+                "l_sig_txop_prot": 0,
+                "pco_active": 0,
+                "pco_phase": 0
+            },
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia":
+            {
+                "description": "Supports multimedia applications with Quality of Service (QoS) over Wireless media.\n\t The QoS priority levels are {voice, video, best effort, background}.",
+                "parameter": "version 1",
+                "wmm_feature": [
+                {
+                    "name": "u-APSD"
+                },
+                {
+                    "name": "Best Effort",
+                    "contention_window": "15-1023",
+                    "aifsn": 3
+                },
+                {
+                    "name": "Background",
+                    "contention_window": "15-1023",
+                    "aifsn": 7
+                },
+                {
+                    "name": "Video",
+                    "contention_window": "7-15",
+                    "aifsn": 2,
+                    "transmit_opportunity": "3008 usec"
+                },
+                {
+                    "name": "Voice",
+                    "contention_window": "3-7",
+                    "aifsn": 2,
+                    "transmit_opportunity": "1504 usec"
+                }]
+            },
+            "robust_secure_network":
+            {
+                "@attributes":
+                {
+                    "title": "Robust Secure Network"
+                },
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "16-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x000c)"
+                    ]
+                }
+            },
+            "wps": [],
+            "wpa":
+            {
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "16-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x000c)"
+                    ]
+                }
+            },
+            "extended_supported_rates":
+            {
+                "rate": [
+                    6,
+                    9,
+                    12,
+                    48
+                ]
+            },
+            "extended_rate_physical_layer": " ",
+            "extended_capabilities": [],
+            "bss_load": [],
+            "available_channels": []
+        },
+        {
+            "ssid": "HOME-1952",
+            "mac": "14:cf:e2:60:19:50",
+            "manufacturer": "ARRIS Group,Inc.",
+            "frequency": 2462,
+            "capabilities": [
+                "ESS",
+                "Privacy",
+                "ShortSlotTime",
+                "(0x0411)"
+            ],
+            "signal_strength": "-83.00 dBm",
+            "supported_rates": [
+                "1.0*",
+                "2.0*",
+                "5.5*",
+                "11.0*",
+                9,
+                18,
+                36,
+                54
+            ],
+            "dist_system":
+            {
+                "@attributes":
+                {
+                    "title": "Distribution System"
+                },
+                "channel": 11
+            },
+            "traffic_indic_map":
+            {
+                "@attributes":
+                {
+                    "title": "Traffic Indication Map"
+                },
+                "dtim_count": 0,
+                "dtim_period": 1,
+                "bitmap_control": 0,
+                "bitmap": 0
+            },
+            "ht_capabilities":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Capabilities"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        4590,
+                        "HT20\/HT40",
+                        "SM Power Save disabled",
+                        "RX HT20 SGI",
+                        "RX HT40 SGI",
+                        "TX STBC",
+                        "RX STBC 1-stream",
+                        "Max AMSDU length: 3839 bytes",
+                        "DSSS\/CCK HT40"
+                    ]
+                },
+                "max_rx_ampdu_length": "65535 bytes (exponent: 0x003)",
+                "min_rx_ampdu_time_spacing": "4 usec (0x05)",
+                "ht_tx_rx_mcs_rate_indexes_supported":
+                {
+                    "rx_indexes_supported": "0-15, ",
+                    "tx_indexes_supported": "HT TX MCS rate indexes are undefined"
+                }
+            },
+            "ht_operation":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Operation"
+                },
+                "primary_channel": 11,
+                "secondary_channel_offset": "no secondary",
+                "station_channel_width": "20 MHz",
+                "rifs": 0,
+                "ht_protection": "no",
+                "non_gf_present": 0,
+                "obss_non_gf_present": 0,
+                "dual_beacon": 0,
+                "dual_cts_protection": 0,
+                "stbc_beacon": 0,
+                "l_sig_txop_prot": 0,
+                "pco_active": 0,
+                "pco_phase": 0
+            },
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia":
+            {
+                "description": "Supports multimedia applications with Quality of Service (QoS) over Wireless media.\n\t The QoS priority levels are {voice, video, best effort, background}.",
+                "parameter": "version 1",
+                "wmm_feature": [
+                {
+                    "name": "Best Effort",
+                    "contention_window": "15-1023",
+                    "aifsn": 3
+                },
+                {
+                    "name": "Background",
+                    "contention_window": "15-1023",
+                    "aifsn": 7
+                },
+                {
+                    "name": "Video",
+                    "contention_window": "7-15",
+                    "aifsn": 2,
+                    "transmit_opportunity": "3008 usec"
+                },
+                {
+                    "name": "Voice",
+                    "contention_window": "3-7",
+                    "aifsn": 2,
+                    "transmit_opportunity": "1504 usec"
+                }]
+            },
+            "robust_secure_network":
+            {
+                "@attributes":
+                {
+                    "title": "Robust Secure Network"
+                },
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "TKIP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": [
+                        "TKIP",
+                        "CCMP"
+                    ]
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "1-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x0000)"
+                    ]
+                }
+            },
+            "wps":
+            {
+                "version": 1,
+                "wps_state": "2 (Configured)",
+                "uuid": "28802880-2880-1880-a880-14cfe2601950",
+                "rf_bands": 1,
+                "unknown_tlv": "(0x1049, 6 bytes) 00 37 2a 00 01 20"
+            },
+            "wpa":
+            {
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "TKIP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": [
+                        "TKIP",
+                        "CCMP"
+                    ]
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                }
+            },
+            "extended_supported_rates":
+            {
+                "rate": [
+                    "6.0*",
+                    "12.0*",
+                    "24.0*",
+                    48
+                ]
+            },
+            "extended_rate_physical_layer": "Barker_Preamble_Mode",
+            "extended_capabilities":
+            {
+                "capability": "HT Information Exchange Supported"
+            },
+            "bss_load":
+            {
+                "@attributes":
+                {
+                    "title": "Basic Service Set Load"
+                },
+                "station_count": 0,
+                "channel_utilisation": "28\/255",
+                "available_admission_capacity": "31250 [*32us]"
+            },
+            "available_channels":
+            {
+                "channels": "[1 - 11]",
+                "power": "20 dBm"
+            }
+        },
+        {
+            "ssid": "Lab-Bailey5G",
+            "mac": "e0:3f:49:ec:8e:bc",
+            "manufacturer": "ASUSTek COMPUTER INC.",
+            "frequency": 5745,
+            "capabilities": [
+                "ESS",
+                "Privacy",
+                "(0x0011)"
+            ],
+            "signal_strength": "-71.00 dBm",
+            "supported_rates": [
+                "6.0*",
+                9,
+                "12.0*",
+                18,
+                "24.0*",
+                36,
+                48,
+                54
+            ],
+            "dist_system": [],
+            "traffic_indic_map": [],
+            "ht_capabilities":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Capabilities"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        2287,
+                        "RX LDPC",
+                        "HT20\/HT40",
+                        "SM Power Save disabled",
+                        "RX HT20 SGI",
+                        "RX HT40 SGI",
+                        "TX STBC",
+                        "No RX STBC",
+                        "Max AMSDU length: 7935 bytes",
+                        "No DSSS\/CCK HT40"
+                    ]
+                },
+                "max_rx_ampdu_length": "65535 bytes (exponent: 0x003)",
+                "min_rx_ampdu_time_spacing": "8 usec (0x06)",
+                "ht_tx_rx_mcs_rate_indexes_supported":
+                {
+                    "rx_indexes_supported": "0-23, ",
+                    "tx_indexes_supported": "HT TX MCS rate indexes are undefined"
+                }
+            },
+            "ht_operation":
+            {
+                "@attributes":
+                {
+                    "title": "High Throughput Operation"
+                },
+                "primary_channel": 149,
+                "secondary_channel_offset": "above",
+                "station_channel_width": "any",
+                "rifs": 1,
+                "ht_protection": "no",
+                "non_gf_present": 0,
+                "obss_non_gf_present": 0,
+                "dual_beacon": 0,
+                "dual_cts_protection": 0,
+                "stbc_beacon": 0,
+                "l_sig_txop_prot": 0,
+                "pco_active": 0,
+                "pco_phase": 0
+            },
+            "vht_capabilities": [],
+            "vht_operation": [],
+            "wireless_multimedia":
+            {
+                "description": "Supports multimedia applications with Quality of Service (QoS) over Wireless media.\n\t The QoS priority levels are {voice, video, best effort, background}.",
+                "parameter": "version 1",
+                "wmm_feature": [
+                {
+                    "name": "u-APSD"
+                },
+                {
+                    "name": "Best Effort",
+                    "contention_window": "15-1023",
+                    "aifsn": 3
+                },
+                {
+                    "name": "Background",
+                    "contention_window": "15-1023",
+                    "aifsn": 7
+                },
+                {
+                    "name": "Video",
+                    "contention_window": "7-15",
+                    "aifsn": 2,
+                    "transmit_opportunity": "3008 usec"
+                },
+                {
+                    "name": "Voice",
+                    "contention_window": "3-7",
+                    "aifsn": 2,
+                    "transmit_opportunity": "1504 usec"
+                }]
+            },
+            "robust_secure_network":
+            {
+                "@attributes":
+                {
+                    "title": "Robust Secure Network"
+                },
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "16-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x000c)"
+                    ]
+                }
+            },
+            "wps": [],
+            "wpa":
+            {
+                "version": 1,
+                "group_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "pairwise_cipher":
+                {
+                    "encryption": "CCMP"
+                },
+                "authentication_suites":
+                {
+                    "auth": "PSK"
+                },
+                "capabilities":
+                {
+                    "capability": [
+                        "16-PTKSA-RC",
+                        "1-GTKSA-RC",
+                        "(0x000c)"
+                    ]
+                }
+            },
+            "extended_supported_rates": [],
+            "extended_rate_physical_layer": "",
+            "extended_capabilities": [],
+            "bss_load": [],
+            "available_channels": []
+        }]

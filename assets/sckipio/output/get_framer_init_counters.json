@@ -1,0 +1,20 @@
+{
+    "usCodeWordSize": 0,
+    "usNumCodeWords": 0,
+    "rxNumCodeWords": 0,
+    "usRsRedundancy": 0,
+    "dsNumCodeWords": 0,
+    "revision": 10,
+    "numProcessedTones": 0,
+    "firstTone": 0,
+    "rxCodeWordSize": 0,
+    "rxLogicalFrameNumSym": 0,
+    "dsRsRedundancy": 0,
+    "lengthInBytes": 48,
+    "txLogicalFrameNumSym": 0,
+    "rxRsRedundancy": 0,
+    "txNumCodeWords": 10,
+    "txCodeWordSize": 0,
+    "dsCodeWordSize": 0,
+    "txRsRedundancy": 52
+}

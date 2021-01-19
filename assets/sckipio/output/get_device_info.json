@@ -1,0 +1,16 @@
+{
+    "firmwareVersion": "2.5.101.0",
+    "fwState": "APP",
+    "lines": [
+    {
+        "lineState": "show time      ",
+        "lineIDs": 0,
+        "lineStartupTime": "0.000"
+    }],
+    "devInfVersion": 3,
+    "configState": "LINE (LCS)",
+    "mainDFEMacAddress": "04:4E:5A:FF:E6:1B",
+    "dateTime": "Jun 14 2017 12:57:31",
+    "vendorId": "00 00 00 00 00 00 00 00 ",
+    "temperatureInCelcius": 0
+}

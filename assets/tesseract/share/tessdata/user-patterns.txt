@@ -1,0 +1,4 @@
+1-\d\d\d-GOOG-441
+www.\n\\\*.com
+Wi-Fi Network Name: \n\*
+Wi-Fi Password: \n\*

@@ -1,0 +1,57 @@
+{
+    "name": "pfi/web",
+    "description": "Custom Wireless Speedtesting Application and Operating System",
+    "homepage":"https://test.com",
+    "type":"project",
+    "minimum-stability":"dev",
+    "prefer-stable":true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brandon Bailey",
+            "email": "brandondanielbailey@gmail.com",
+            "homepage":"http://brandondanielbailey.com",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "email":"brandondanielbailey@gmail.com",
+        "issues":"https://git.test.com/pfi/web/issues",
+        "wiki":"https://git.test.com/pfi/web/wikis/home"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@git.test.com:gigafi/pusher-http-php.git"
+        },
+        {
+            "type":"git",
+            "url":"git@git.test.com:gigafi/php-curl-class.git"
+        },
+        {
+            "type":"git",
+            "url":"git@git.test.com:gigafi/snappy.git"
+        },
+        {
+            "type":"git",
+            "url":"git@git.test.com:gigafi/php-gitlab-api.git"
+        }
+    ],
+    "require": {
+        "gigafi/pusher-http-php": "^2.2",
+        "gigafi/snappy": "^0.4.3",
+        "gigafi/php-curl-class": "^7.2.0",
+        "monolog/monolog":"^1.21.0",
+        "gigafi/php-gitlab-api": "^7.15.0",
+        "composer/semver": "^1.4",
+        "endroid/qrcode": "^2.1"
+    },
+    "require-dev":{
+        "phpro/grumphp": "^0.11.2",
+        "phpunit/phpunit": "^6.0.7",
+        "satooshi/php-coveralls":"^1.0"
+    },
+    "config":{
+        "vendor-dir": "application/vendor"
+    }
+}

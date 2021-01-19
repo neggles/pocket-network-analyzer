@@ -1,0 +1,6 @@
+*.json
+*.xml
+/speed-test/*.json
+/wireless-networks/*.json
+/wireless-networks/*.xml
+/timeout/*

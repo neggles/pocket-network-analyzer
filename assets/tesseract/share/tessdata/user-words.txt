@@ -1,0 +1,7 @@
+Wi-Fi
+Password
+Network
+Name
+Device
+Access
+Code

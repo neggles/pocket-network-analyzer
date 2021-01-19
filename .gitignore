@@ -1,0 +1,137 @@
+sftp-config.json
+ftpsync.settings
+assets/tcpdump/*.txt
+update.sh
+assets/speedtest/*
+!assets/speedtest/.gitkeep
+assets/pocketspeed/speedtest.json
+assets/modem/*
+
+# The file that stores the user information persistently
+assets/user.json
+# The file that is dynamically generated with the units ssid
+assets/ssid.conf
+# The file that stores the hardware settings
+assets/hardware.json
+
+nonce.json
+results.json
+application/database/pfi.db
+composer.lock
+grumphp.yml
+# Ignore composer dependencies
+# a git hook will be used to ensure these are up to date 
+
+assets/uploads/*
+package-lock.json
+
+# Cache Files
+application/cache/*
+!application/cache/.htaccess
+!application/cache/index.html
+assets/speedtest-cli/*.json
+
+# Session Files
+application/sessions/*
+!application/sessions/.gitkeep
+!application/sessions/index.html
+
+application/logs/*
+!application/logs/index.html
+
+.php_cs.cache
+vendor
+/application/vendor
+/application/composer.lock
+
+/pfi
+
+/build/composer.phar
+
+# Locations that .bowerrc installs to
+assets/vendor
+assets/plugins
+
+# just sane ignores
+.*.sw[po]
+*.bak
+*.BAK
+*~
+*.orig
+*.class
+.cvsignore
+Thumbs.db
+*.py[co]
+_darcs/*
+CVS/*
+.svn/*
+RCS/*
+*.backup*
+# kdevelop
+.kdev
+*.kdev4
+*.kate-swp
+
+# Lokalize
+*lokalize*
+
+# eclipse
+.project
+.settings
+
+# netbeans 
+nbproject
+
+# phpStorm
+.idea
+*.iml
+
+# geany
+*.geany
+
+# Cloud9IDE
+.settings.xml
+.c9revisions
+
+# vim ex mode
+.vimrc
+
+# ack(-grep)
+.ackrc
+	
+# Mac OS
+.DS_Store
+
+# WebFinger
+.well-known
+/.buildpath
+
+# Tests
+/tests/phpunit.xml
+
+# Node Modules
+/build/node_modules/
+
+# nodejs
+/build/lib/
+/build/jsdocs/
+/npm-debug.log
+
+# puphpet
+puphpet
+
+# vagrant
+.vagrant
+Vagrantfile
+
+# Tests - auto-generated files
+/data-autotest
+/tests/coverage*
+/tests/karma-coverage
+/tests/autoconfig*
+/tests/autotest*
+/tests/data/lorem-copy.txt
+/tests/data/testimage-copy.png
+/config/config-autotest-backup.php
+/config/autoconfig.php
+clover.xml

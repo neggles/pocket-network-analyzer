@@ -1,0 +1,49 @@
+{
+	"top_nav": {
+		"home": {
+			"url":"home",
+			"icon":"fa fa-home",
+			"text":"Home"
+		},
+		"wireless":{
+			"url":"scanner",
+			"icon":"fa fa-wifi",
+			"text":"Wireless"
+		},
+		"speedtest": {
+			"url":"speedtest",
+			"icon":"fa fa-tachometer",
+			"text":"Speed Test"
+		},
+		"job": {
+			"url":"job",
+			"icon":"fa fa-user",
+			"text":"Job"
+		},
+		"widar": {
+			"url":"widar",
+			"icon":"fa fa-wifi",
+			"text":"Widar"
+		},
+		"ux": {
+			"url":"userexperience",
+			"icon":"fa fa-gamepad",
+			"text":"UX"
+		},
+		"feedback": {
+			"url":"issue",
+			"icon":"fa fa-comment",
+			"text":"Feedback"
+		},
+		"gfast": {
+			"url":"gfast",
+			"icon":"",
+			"text":"G.Fast"
+		},
+		"advanced": {
+			"url":"advanced",
+			"icon":"",
+			"text":"Advanced"
+		}
+	}
+}

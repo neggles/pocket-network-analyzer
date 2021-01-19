@@ -1,0 +1,9 @@
+mpg123 syntax
+
+mpg123 -@ boot_up.mp3
+
+mpg123 -@ scan_complete.mp3
+
+mpg123 -@ still_on.mp3
+  -  Cron every 5 minutes
+

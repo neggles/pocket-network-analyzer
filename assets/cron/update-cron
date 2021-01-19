@@ -1,0 +1,3 @@
+# m h  dom mon dow   command
+*/2 * * * * php /home/pfi/public_html/index.php version runUpdate
+@reboot bash /home/pfi/sanitycheck.sh

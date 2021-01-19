@@ -1,0 +1,80 @@
+#! /usr/bin/perl
+
+use strict;
+use warnings;
+
+my @wirelessChannels = (1..11);
+
+my $interface = "wlan0";
+
+# Subroutine to check what mode the interface is in.
+# If it is not in Monitor mode, put it in monitor mode.
+
+sub checkWirelessMode
+{
+	my $mode = `sudo iwconfig $interface | grep Mode | awk '{print \$1}'`;
+
+	chomp($mode);
+
+	print $mode . "\n";
+
+	if($mode !~ /Mode:Monitor/g)
+	{		
+		print "Changing wireless interface mode.";
+		system("sudo iwconfig $interface mode monitor");
+	}	
+}
+
+
+sub setupEnvironment
+{
+	# Shutdown wireless interface
+	system("sudo ifconfig $interface down");
+
+	# Call subroutine to ensure wireless card is in Monitor mode
+	&checkWirelessMode;
+
+	# Bring wireless card back up
+	system("sudo ifconfig $interface up");
+
+	&runTcpDump;
+}
+
+
+sub shutDownEnvironment
+{
+	system("sudo ifconfig $interface down");
+
+	system("sudo iwconfig $interface mode managed");
+
+	system("sudo ifconfig $interface up");
+
+	&endProgram;
+}
+
+sub endProgram 
+{
+	print "Finished running program.\n";	
+}
+
+sub runTcpDump
+{
+	
+	foreach my $channel (@wirelessChannels)
+	{
+		system("sudo ifconfig $interface down");
+
+		system("sudo iwconfig $interface chan $channel");
+
+		system("sudo ifconfig $interface up");
+
+		print "Running scan on channel: $channel\n";
+
+		system("sudo tcpdump -G 10 -W 1 -i $interface -n -s 256 -w /var/www/html/assets/tcpdump/channel-$channel-file.txt");
+	}
+
+	&shutDownEnvironment;
+}
+
+
+&setupEnvironment;
