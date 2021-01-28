@@ -1,6 +1,6 @@
 # Pocket Network Analyzer Custom Web Interface
 
-![alt text](https://github.com/brandon-bailey/pocket-network-analyzer/tree/master/assets/screenshots/main.JPG?raw=true)
+![alt text](./assets/screenshots/main.JPG?raw=true)
 
 ## There is alot to unpack here
 
