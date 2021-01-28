@@ -1,6 +1,6 @@
 # Pocket Network Analyzer Custom Web Interface
 
-![alt text](./assets/screenshots/main.JPG?raw=true)
+![Main Webpage](./assets/screenshots/main.JPG?raw=true)
 
 ## There is alot to unpack here
 
@@ -26,3 +26,5 @@ $db['default'] = array(
 
 ```
 
+# Speedtest results using Odroid-XU4 and iperf3 (pspeed3)
+![iPerf3](./assets/screenshots/pspeed-results.JPG?raw=true)
