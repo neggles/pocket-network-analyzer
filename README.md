@@ -2,9 +2,17 @@
 
 ![Main Webpage](./assets/screenshots/main.JPG?raw=true)
 
+
+## User Experience Network Test
+
+> Note: This is intended to give an insight into what the network quality will look like given the providers guidance on network requirements
+
+![User Experience](./assets/screenshots/ux.JPG?raw=true)
+
+
 ## There is alot to unpack here
 
-- This project is coming from a "proprietary" project I built, so there will be some bugs as I work out the kinks
+- so there will be some bugs as I work out the kinks
 - If there is a following for this project I will work closely with all interested stakeholders to work through any issues or question that arise from its use
 
 ### For working with debian linux operating system.
